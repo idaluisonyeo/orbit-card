@@ -188,7 +188,7 @@ if (typeof module !== "undefined" && module.exports) {
 };
 
 $(function() {
-  $(".save-img").click(function() {
+  $(".save-card").click(function() {
     html2canvas(document.querySelector("#bag")).then(function(e) {
       e.toBlob(function(e) {
         saveAs(e, "orbit-card.png")

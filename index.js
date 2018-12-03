@@ -10,5 +10,5 @@ import switcher from './assets/js/backgroundSwitcher';
 import html2canvas from './assets/js/html2canvas';
 window.html2canvas = html2canvas;
 
-// FileSaver lib
+// FileSaver lib + initialize
 import saveAs from './assets/js/fileSaver';
