@@ -89,10 +89,9 @@ svg {
 }
 
 .left {
-  background-color: blue;
   border-top-left-radius: $radius;
   border-bottom-left-radius: $radius;
-  margin-right: -1px;
+  border-right: solid 1px white; // Chrome bugfix to stop gradient background from peeking out
   width: 68%;
   background: linear-gradient(270deg, #ec1414, #eccb14, #14ec1c, #14eaec, #1914ec, #ec14da);
   background-size: auto auto;
@@ -108,10 +107,11 @@ svg {
 
 .left {
   img {
-    border-top-left-radius: $radius;
-    border-bottom-left-radius: $radius;
     width: 100%;
     max-width: 645px;
+    border-top-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+    border-right: solid 1px white; // Chrome bugfix to stop gradient background from peeking out
   }
 }
 
